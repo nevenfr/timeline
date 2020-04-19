@@ -1,0 +1,42 @@
+.App {
+  font-family: sans-serif;
+  /* text-align: center; */
+}
+
+.icon {
+  transform: translateY(-50%);
+  flex-grow: 0;
+}
+
+.icContainer {
+  flex-grow: 0;
+}
+
+.timeline {
+  flex-grow: 1;
+  width: 2px;
+  background-color: blue;
+}
+
+.iconContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeline::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  background-color: green;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  align-items: stretch;
+}
