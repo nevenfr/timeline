@@ -4,18 +4,20 @@
 }
 
 .icon {
-  transform: translateY(-50%);
+  position: relative;
+  transform: translateY(-25%);
   flex-grow: 0;
+  z-index: 1;
 }
 
 .icContainer {
+  position: relative;
   flex-grow: 0;
 }
 
 .timeline {
   flex-grow: 1;
   width: 2px;
-  background-color: blue;
 }
 
 .iconContainer {
@@ -26,17 +28,19 @@
   align-items: center;
 }
 
-.timeline::after {
+.iconContainer::after {
   position: absolute;
   content: "";
   width: 2px;
   background-color: green;
   top: 0;
   bottom: 0;
-  z-index: -1;
 }
 
 .container {
   display: flex;
   align-items: stretch;
+}
+.contentDiv {
+  padding: 12px 0 12px 12px;
 }
