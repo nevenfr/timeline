@@ -1,41 +1,44 @@
 .App {
   font-family: sans-serif;
   /* text-align: center; */
-  font-size: 14px;
+  font-size: 28px;
 }
 
 .icon {
-  position: relative;
+  /* position: relative; */
   transform: translateY(calc((1em - 100%) / 2));
   flex-grow: 0;
   z-index: 1;
 }
 
 .icContainer {
-  position: relative;
+  /* position: relative; */
   flex-grow: 0;
 }
 
 .timeline {
+  position: relative;
   flex-grow: 1;
   width: 2px;
 }
 
 .iconContainer {
-  position: relative;
+  /* position: relative; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
-.iconContainer::after {
+.timeline::before {
   position: absolute;
   content: "";
   width: 2px;
   background-color: green;
   top: 0;
   bottom: 0;
+  z-index: -1;
 }
 
 .container {
